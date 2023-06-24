@@ -1,0 +1,377 @@
+
+/* conatct.html */
+/* Google Font CDN Link */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: .3s;
+  
+  &:hover &__image {
+    filter: grayscale(1);
+  }
+  
+  &__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  
+  &__link {
+    margin: 2px;
+    overflow: hidden;
+    
+    &:hover {
+      .gallery__image {
+        filter: grayscale(0);
+      }
+      
+      .gallery__caption {
+        opacity: 1;
+      }
+    }
+  }
+  
+  &__thumb {
+    position: relative;
+  }
+  
+  &__image {
+    display: block;
+    width: 100%;
+    transition: .3s;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+    transition: .3s;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+  background:linear-gradient(90deg, #fff 60%, #eee 40.1%);
+}
+
+.container .side-bar{
+  width:400px;
+}
+
+.container .side-bar.active{
+  display: none;
+}
+
+.container .side-bar .list{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.container .side-bar .list li{
+  padding:10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+.container .side-bar .list li::before{
+  content: '';
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:-5px;
+  width: 0%;
+  height: 3px;
+  background-color: #000;
+  transition: width .2s linear .2s;
+}
+
+.container .side-bar .list li.active,
+.container .side-bar .list li:hover{
+  font-size: 30px;
+}
+
+.container .side-bar .list li.active::before,
+.container .side-bar .list li:hover::before{
+  right: -5px;
+  width: 105%;
+}
+
+.container .video-container{
+  flex:1;
+}
+
+.container .video-container video{
+  width: 100%;
+  object-fit: cover;
+}
+
+#menu-btn{
+  position: fixed;
+  top:20px; left:30px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width:1200px){
+  .container{
+    position: relative;
+  }
+
+  .container .side-bar{
+    position: absolute;
+    top:0; left:-110%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding:30px;
+  }
+
+  .container .side-bar .list{
+    height: 100%;
+    justify-content: center;
+  }
+
+  .container .side-bar.active{
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+    display: initial;
+    left:0;
+  }
+}
+
+@media (max-width:450px){
+
+  .container{
+    padding:20px;
+  }
+
+  .container .side-bar{
+    width: 300px;
+  }
+
+  .container .side-bar .list li{
+    font-size: 15px;
+  }
+
+  .container .side-bar .list li.active{
+    font-size: 20px;
+  }
+
+}
+
+
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
