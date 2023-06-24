@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Two Vertical Columns</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .column {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .column:first-child {
+      border-right: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="column">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+     <h2>Before That</h2>
+    </marquee><hr>
+       <img src="comp/img1.jpg" alt="Portrait by Mari Lezhava" class="gallery__image" height="300px" width="50%">
+  </div>
+
+  <div class="column">
+     <marquee behavior="scroll" direction="left" scrollamount="5">
+     <h2>After That</h2>
+    </marquee><hr>
+    <img src="comp/img2.jpg" alt="Portrait by Mari Lezhava" class="gallery__image"  height="300px" width="50%">
+  </div>
+</div>
+
+</body>
+</html>

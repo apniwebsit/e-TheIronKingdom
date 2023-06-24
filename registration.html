@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Registration</title>
+  <style>
+    body {
+ 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+ 
+  </style>
+  
+</head>
+<body>
+  <h1>Gym Registration</h1>
+  
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+
+    <label for="number">Phone:</label>
+    <input type="number" id="number" name="number" required><br><br>
+
+    <label for="exercise-select">Select Time:</label>
+    <select id="exercise-select" name="exercise" onchange="displayExercisePhoto()" required>
+      <option value="" selected disabled>Select an Time</option>
+      <option value="exercise1">MORNING(5 to 10am)</option>
+      <option value="exercise2">Evening(5 to 10pm)</option>
+    </select><br><br>
+
+    <div id="exercise-photo-container"></div><br>
+
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
